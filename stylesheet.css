@@ -1,46 +1,46 @@
 ﻿body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
-    background-color: #eaeaea;
-    color: #333;
+    background-color: lightgray;
+    color: darkgray;
     margin: 20px;
 }
 
 h1 {
     font-size: 32pt;
-    color: #2a2a2a;
+    color: dimgray;
     font-weight: bold;
 }
 
 h2 {
     font-size: 26pt;
-    color: #3b3b3b;
+    color: #gray;
 }
 
 h3 {
     font-size: 20pt;
-    color: #4a4a4a;
+    color: darkslategray;
     font-weight: normal;
 }
 
 p {
     font-size: 14pt;
-    color: #555;
+    color: slategray;
     line-height: 1.6;
 }
 
 a:link, a:visited {
-    color: #0066cc;
+    color: blue;
     text-decoration: none;
 }
 
 a:hover {
-    color: #ff6600;
+    color: orange;
     text-decoration: underline;
 }
 
 a:active {
-    color: #ff0000;
+    color: red;
 }
 
 ul {
