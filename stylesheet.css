@@ -17,6 +17,12 @@ h2 {
     color: #3b3b3b;
 }
 
+h3 {
+    font-size: 20pt;
+    color: #4a4a4a;
+    font-weight: normal;
+}
+
 p {
     font-size: 14pt;
     color: #555;
