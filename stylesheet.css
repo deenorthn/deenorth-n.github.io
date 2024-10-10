@@ -67,3 +67,32 @@ hr {
     padding: 10px;
     border: 1px solid #ddd;
 }
+
+#profilePicutre { 
+    max-width: 300px; /* Sets the maximum image size to 300 */
+    border-radius: 3px; /* Sets the border radius to 3 */
+}
+
+#sidebar {
+    background-color: #543564; /* light purple background color */
+    color: #ffffff; /* White text */
+    padding: 30px; /* Sets the padding inside the sidebar */
+    width: 400px; /* Sets the width of the sidebar */
+    height: 200%; /* Sets the height of the sidebar */
+}
+
+nav {
+    display: flex;
+    flex-direction: row; 
+}
+
+nav a {
+    color: grey; /* Grey link color */
+    padding: 20px; /* Sets the padding for the clickable area */
+    border-radius: 5px; /* Sets the border radius to 4 */
+}
+
+nav a:hover {
+    background-color: #3f345e; /* dark purple background color */
+    color: #c3c6c7; /* light grey text color */
+}
