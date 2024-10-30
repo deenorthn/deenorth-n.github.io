@@ -1,70 +1,63 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Deenorth Naganathan's Website</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src="main.js"></script> <!-- Links the javascript code -->
+  <title>Lab 6 Assignment</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<button ID = "myButton">Enter your name</button>
-<p ID = "displayName"></p>
-<body>
-    <div ID = "Sidebar">
-        <navigation> <!-- 3 headers for the navigation bar -->
-             <a href="#education" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Education</a>
-            <a href="#educational awards" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Educational Awards</a>
-            <a href="#extracurricular involvement" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Extracurricular Involvement</a>
-        </nav>
-    </div>
-    <h1>Welcome!</h1>
-    <img ID = "profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImage()"> <!-- Enables the toggle which enlarges the image size -->
 
-    <p>My name is Deenorth Naganathan and welcome to my website!</p>
 
-    <h2 ID = "education">Education</h2> <!-- Hyperlinking this education section to the sidebar -->
+<body> <!-- Profile Picture -->
+  <!-- Menu -->
+  <nav>
+    <ul style="display: flex; justify-content: space-around;">
+      <li><a href="mailto:nirajvaya17@gmail.com" id="navColor1" onmouseover="changeColor(1)"
+          onmouseout="revertColor(1)">Email Me</a></li>
+      <li><a href="https://www.linkedin.com/in/niraj-vaya/ " id="navColor2" onmouseover="changeColor(2)"
+          onmouseout="revertColor(2)">LinkedIn</a></li>
+      <li><a href="https://drive.google.com/file/d/1TemV8jjPUApr2YowITMuHu6BpIJJ14pi/view?usp=sharing" id="navColor3"
+          onmouseover="changeColor(3)" onmouseout="revertColor(3)">My Resume</a>
+      </li>
+    </ul>
+    <div> <!-- Button -->
+      <div style="display: flex; justify-content: center;">
+        <button type="button" id="myButton" onclick="enterName();this.style.display='none'">Enter Your Name</button>
+        <div id="name"></div>
+      </div>
+
+
+  </nav>
+  <h1>Niraj Vaya</h1>
+  <br>
+  <img id="profile-pic" class="small" src="image.JPG" alt="Niraj Vaya" onclick="toggleImage()">
+
+
+  <h4>My Previous Education</h4>
+  <ul class="submenu">
+    <li><a href="https://stephenlewis.peelschools.org" id="navColor4" onmouseover="changeColor(4)"
+        onmouseout="revertColor(4)">HighSchool</a></li>
+    <li><a href="https://www.torontomu.ca" id="navColor5" onmouseover="changeColor(5)"
+        onmouseout="revertColor(5)">University</a></li>
+
+
+    <h2>Awards</h2>
     <ul>
-        <li>High School: The Woodlands Secondary School (2016-2020)</li>
-        <li>University: Toronto Metropolitan University (2020-PRESENT)</li>
-        <li>Program: Business Technology Management</li>
+      <li>Honours Student 2018</li>
     </ul>
 
-    <h2>Program/Courses</h2>
-    <p>In the Business Technology Management degree program, you'll learn business fundamentals and drive ICT-based innovation through an optional co-op, case studies, and modern classrooms and labs. You'll learn to assess business needs, build technology-based solutions, and explain them.</p>
-    <p>One of my most useful courses that I have taken so far in my studies would be ITM550 because I was always so interested and wanted to learn how to use Shopify and be familiar with the interface.</p>
+    <h3>Activities</h3>
+    <ol>
+      <li>Student Union</li>
+      <li>Marketing Club</li>
+    </ol>
 
-    <h2 ID = "educational awards"> Educational Awards</h2>    <ul>
-        <li>Entrance Scholarship of $5000, Toronto Metropolitan University</li>
-    </ul>
-
-    <hr>
-
-    <h2 ID = "extracurricular involvement">Extracurricular Involvement</h2>
-    <p>Toronto Metropolitan University</p>
-    <ul>
-        <li>General Member @ Tamil Student Association</li>
-    </ul>
-
-    <p>The Woodlands Secondary School</p>
-    <ul>
-        <li>Robotics Team Leader for VEX</li>
-        <li>Gaming Society Member</li>
-        <li>Varsity Basketball Team</li>
-    </ul>
-
-    <h2>Links and Descriptions</h2>
-    <div class="table-container">
-        <div class="table-row">
-            <div class="table-cell"><a href="https://www.linkedin.com/in/deenorth-naganathan-377a30b8/">LinkedIn</a></div>
-            <div class="table-cell">Visit my LinkedIn profile to connect with me professionally.</div>
-        </div>
-        <div class="table-row">
-            <div class="table-cell"><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></div>
-            <div class="table-cell">Learn more about my university and its programs.</div>
-        </div>
-    </div>
-
-    <h3>Additional Information</h3>
-    <p>Feel free to reach out to me if you would like to learn more about my experiences.</p>
-
+    <br>
+    <!--Contact Me Button -->
+    <script src="main.js"></script>
+    <button onclick="window.location.href='contact.html'">
+      <h4>Send me a Messege</h4>
+    </button>
+    </br>
 </body>
+
 </html>
