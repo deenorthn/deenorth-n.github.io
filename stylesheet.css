@@ -14,19 +14,37 @@ h1 {
 
 h2 {
     font-size: 26pt;
-    color: #darkcyan;
-}
-
-h3 {
-    font-size: 20pt;
-    color: cadetblue;
-    font-weight: normal;
+    color: darkcyan;
 }
 
 p {
     font-size: 14pt;
     color: dimgrey;
     line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: grey;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #3f345e;
+    color: #c3c6c7;
+}
+
+#profilePicture {
+    max-width: 300px;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
 }
 
 a:link, a:visited {
@@ -41,58 +59,4 @@ a:hover {
 
 a:active {
     color: crimson;
-}
-
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-hr {
-    margin: 20px 0;
-}
-
-.table-container {
-    display: table;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.table-row {
-    display: table-row;
-}
-
-.table-cell {
-    display: table-cell;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-#profilePicutre { 
-    max-width: 300px; /* Sets the maximum image size to 300 */
-    border-radius: 3px; /* Sets the border radius to 3 */
-}
-
-#sidebar {
-    background-color: #543564; /* light purple background color */
-    color: #ffffff; /* White text */
-    padding: 30px; /* Sets the padding inside the sidebar */
-    width: 400px; /* Sets the width of the sidebar */
-    height: 200%; /* Sets the height of the sidebar */
-}
-
-nav {
-    display: flex;
-    flex-direction: row; 
-}
-
-nav a {
-    color: grey; /* Grey link color */
-    padding: 20px; /* Sets the padding for the clickable area */
-    border-radius: 5px; /* Sets the border radius to 4 */
-}
-
-nav a:hover {
-    background-color: #3f345e; /* dark purple background color */
-    color: #c3c6c7; /* light grey text color */
 }
