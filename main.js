@@ -1,7 +1,12 @@
 function askName() {
 var Name = prompt("Please enter your name", "Name"); // Prompting the user to type in their name
 document.getElementByID("displayName").innerText = "Hello," + Name + "Welcome to my page!";
-
+if (userName) { // Check if userName is not null or an empty string
+        document.getElementById("displayName").innerText = "Hello, " + userName + "!"; // Display user's name
+    } else {
+        document.getElementById("displayName").innerText = "Hello!"; // Fallback message if no name was provided
+    }
+}
 function toggleImageSize() { // Enlarging the image
 	var image = document.getElementByID("profilePicture");
 	if (image.style.transform = "scale(2)") {
