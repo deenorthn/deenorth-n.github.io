@@ -1,9 +1,9 @@
 function askName() {
     var name = prompt("Please enter your name", "Name"); // Prompting the user to type in their name
     if (name) { 
-        document.getElementById("displayName").innerText = "Hello, " + name + "!"; // Display user's name
+        document.getElementById("displayName").innerText = "Hello, " + name + "!"; // Shows the user's name
     } else {
-        document.getElementById("displayName").innerText = "Hello!"; // Fallback message if no name was provided
+        document.getElementById("displayName").innerText = "Hello!"; //  This message will be showed if no name was provided
     }
 }
 

@@ -25,5 +25,5 @@ function storeData() {
     localStorage.setItem("option", option);
     localStorage.setItem("message", message);
 
-    alert("Message Sent!\nThank you for reaching out, I will get back to you as soon as possible.");
+    alert("Message Sent!\nThank you for contacting me; I will respond as soon as I can.");
 }
