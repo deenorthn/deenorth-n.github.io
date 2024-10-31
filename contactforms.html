@@ -6,15 +6,13 @@
 </head>
 <body>
     <script src="contact.js"></script>
-    <button onclick="window.location.href='index.html'">
-        <h4>Go Back</h4>
-    </button>
+    <button onclick="window.location.href='index.html'">Go Back</button>
     <form id="contactme">
 
         <h2> Enter Your Information</h2>
         <input placeholder="Full Name" id="fullname" type="text">
-        <input placeholder="Email" id="email">
-        <input placeholder="Cell" id="cell">
+        <input placeholder="Email" id="email" type="email">
+        <input placeholder="Cell" id="cell" type="tel">
 
         <h2> Preffered Contact Method</h2>
         <input type="radio" id="Cell" name="Contact" value="Cell"> Cell
@@ -37,9 +35,9 @@
         </div>
 
         <h2> Send a Message</h2>
-        <input placeholder="Type Your Message Here" id="Messege" type="text">
+        <input placeholder="Type Your Message Here" id="Message" type="text">
         <input value="Submit" id="Submit" type="button" onclick="storeData()">
-        <input value="Clear/Reset" id="Clear/Reset" type="button" onclick="resetContact()">
+        <input value="Clear/Reset" id="clear-reset" type="button" onclick="resetContact()">
     </form>
 </body>
 </html>

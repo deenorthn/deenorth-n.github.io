@@ -9,12 +9,12 @@ function resetContact() {
 function storeData() {
   var name = document.getElementById("fullname").value;
   var email = document.getElementById("email").value;
-  var phone = document.getElementById("phone").value;
+  var cell = document.getElementById("cell").value;
   var morning = document.getElementById("Morning").checked;
   var afternoon = document.getElementById("Afternoon").checked;
   var evening = document.getElementById("Evening").checked;
   var option = document.getElementById("options").value;
-  var message = document.getElementById("Messege").value;
+  var message = document.getElementById("Message").value;
 
   localStorage.setItem("name", name);
   localStorage.setItem("email", email);
@@ -25,5 +25,5 @@ function storeData() {
   localStorage.setItem("option", option);
   localStorage.setItem("message", message);
 
-  alert("Messege Sent!\nThank you for reaching out, I will get back to you as soon as possible.");
+  alert("Message Sent!\nThank you for reaching out, I will get back to you as soon as possible.");
 };
