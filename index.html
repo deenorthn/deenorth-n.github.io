@@ -7,17 +7,17 @@
     <script src="main.js"></script> <!-- Links the JavaScript code -->
 </head>
 <body>
-    <button onclick="askName()">Enter Your Name</button>
-    <p id="displayName"></p> <!-- Display name inputted in the prompt -->
-
-    <div id="sidebar">
-        <nav> <!-- Navigation bar -->
+    <div id="navbar"> <!-- Centered Navigation Bar -->
+        <nav>
             <a href="#education" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Education</a>
             <a href="#educational-awards" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Educational Awards</a>
             <a href="#extracurricular-involvement" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Extracurricular Involvement</a>
             <button onclick="window.location.href='contactforms.html'" class="nav-link">Chat with Me</button>
         </nav>
     </div>
+
+    <button onclick="askName()">Enter Your Name</button>
+    <p id="displayName"></p> <!-- Display name inputted in the prompt -->
 
     <h1>Welcome!</h1>
     <img id="profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()"> <!-- Enables the toggle for image size -->
