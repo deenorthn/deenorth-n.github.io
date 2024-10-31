@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     font-size: 26pt;
-    color: #darkcyan;
+    color: darkcyan;
 }
 
 h3 {
@@ -68,9 +68,9 @@ hr {
     border: 1px solid #ddd;
 }
 
-#profilePicutre { 
-    max-width: 100px; /* Sets the maximum image size to 300 */
-    border-radius: 3px; /* Sets the border radius to 3 */
+#profilePicture { 
+    max-width: 100px; /* Sets the maximum image size */
+    border-radius: 3px; /* Sets the border radius */
 }
 
 #sidebar {
@@ -89,9 +89,10 @@ nav {
 nav a {
     color: grey; /* Grey link color */
     padding: 20px; /* Sets the padding for the clickable area */
-    border-radius: 5px; /* Sets the border radius to 4 */
+    border-radius: 5px;
 }
 
 nav a:hover {
     background-color: #3f345e; /* dark purple background color */
     color: #c3c6c7; /* light grey text color */
+}
