@@ -1,4 +1,4 @@
-//Resets the form fields with butto
+//Resets the form fields with button
 function resetContact() {
   document.getElementById("contactme").reset();
   localStorage.removeItem("userData"); // Clear stored data from local storage
