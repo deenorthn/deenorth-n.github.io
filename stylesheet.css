@@ -40,6 +40,23 @@ body {
     color: #e0e6ed; /* Slightly lighter color for contrast on hover */
 }
 
+/* Chat with Me Button Styling */
+#navbar .chat-button {
+    background-color: #40597e; /* Darker blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+#navbar .chat-button:hover {
+    background-color: #6082b6; /* Lighter blue on hover */
+    color: #e0e6ed; /* Light grey text for contrast */
+}
+
 /* Header and Heading Styling */
 h1 {
     font-size: 36pt;
