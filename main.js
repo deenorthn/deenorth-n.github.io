@@ -1,3 +1,4 @@
+function askName() {
 var name = prompt("Please enter your name", "Name"); // Prompting the user to type in their name
 document.getElementByID("displayName").innerText = "Hello," + Name + "Welcome to my page!";
 
