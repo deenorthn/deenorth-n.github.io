@@ -1,4 +1,4 @@
-﻿body {
+﻿bod {
     font-family: Arial, sans-serif;
     font-size: 12pt;
     background-color: lightgrey;
@@ -95,4 +95,29 @@ nav a {
 nav a:hover {
     background-color: #3f345e; /* dark purple background color */
     color: #c3c6c7; /* light grey text color */
+
+#myButton {
+    margin-top: 1rem;
+}
+
+form {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#Message {
+    height: 50px;
+    width: 300px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    vertical-align: top;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#myButton {
+    color: rgb(2, 86, 126);
+    font-size: 17px
 }
