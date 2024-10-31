@@ -16,8 +16,10 @@
         </nav>
     </div>
 
-    <button onclick="askName()">Enter Your Name</button>
-    <p id="displayName"></p> <!-- Display name inputted in the prompt -->
+    <div id="name-button-container"> <!-- Centered "Enter Your Name" Button Container -->
+        <button onclick="askName()" id="enter-name-button">Enter Your Name</button>
+        <p id="displayName"></p> <!-- Display name inputted in the prompt -->
+    </div>
 
     <h1>Welcome!</h1>
     <img id="profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()"> <!-- Enables the toggle for image size -->

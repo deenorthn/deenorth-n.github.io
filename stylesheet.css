@@ -57,6 +57,30 @@ body {
     color: #e0e6ed; /* Light grey text for contrast */
 }
 
+/* Centered Name Button Container */
+#name-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#enter-name-button {
+    background-color: #40597e; /* Matching theme color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Spacing between button and display name text */
+}
+
+#enter-name-button:hover {
+    background-color: #6082b6;
+}
+
 /* Header and Heading Styling */
 h1 {
     font-size: 36pt;
