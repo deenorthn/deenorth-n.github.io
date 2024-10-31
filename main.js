@@ -14,7 +14,7 @@ function toggleImageSize() { // Enlarging the image
 	} else {
 		image.style.transform = "scale(2)";
 	}
-{
+}
 
 function highlightLink(link) {
 	link.style.color = "blue"; // Changes text color
