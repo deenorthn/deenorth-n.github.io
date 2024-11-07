@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <title>Contact Me</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="contact.js" defer></script> <!-- Links contact-specific JavaScript -->
 </head>
 <body>
-    <div id="navbar"> <!-- Centered Navigation Bar -->
+    <div id="navbar">
         <nav>
             <a href="index.html" class="nav-link">Home</a>
             <a href="#contact-section" class="nav-link">Contact Me</a>
@@ -27,25 +28,23 @@
             <input type="radio" id="bothContact" name="contactMethod" value="Both"> Both
 
             <h2>Availability</h2>
-            <label><input type="checkbox" id="Morning" name="Morning" value="Morning"> Morning (9am-11am)</label>
-            <label><input type="checkbox" id="Afternoon" name="Afternoon" value="Afternoon"> Afternoon (12pm-6pm)</label>
-            <label><input type="checkbox" id="Evening" name="Evening" value="Evening"> Evening (6pm-9pm)</label>
+            <label><input type="checkbox" id="Morning" name="availability" value="Morning"> Morning (9am-11am)</label>
+            <label><input type="checkbox" id="Afternoon" name="availability" value="Afternoon"> Afternoon (12pm-6pm)</label>
+            <label><input type="checkbox" id="Evening" name="availability" value="Evening"> Evening (6pm-9pm)</label>
 
             <h2>Reason for Contacting</h2>
             <select id="options" name="options">
                 <option value="default">Please Select</option>
-                <option value="option1">Job Opportunity</option>
-                <option value="option2">Networking</option>
-                <option value="option3">Other</option>
+                <option value="job">Job Opportunity</option>
+                <option value="networking">Networking</option>
+                <option value="other">Other</option>
             </select>
 
             <h2>Send a Message</h2>
-            <textarea placeholder="Enter Your Message Here" id="Message"></textarea>
+            <textarea placeholder="Type Your Message Here" id="Message"></textarea>
             <input value="Submit" id="Submit" type="button" onclick="storeData()">
             <input value="Clear/Reset" id="clear-reset" type="button" onclick="resetContact()">
         </form>
     </div>
-
-    <script src="contact.js"></script>
 </body>
 </html>
