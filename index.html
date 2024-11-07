@@ -4,73 +4,45 @@
     <meta charset="utf-8">
     <title>Deenorth Naganathan's Website</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="main.js" defer></script> <!-- Links the JavaScript code correctly -->
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div id="navbar">
         <nav>
-            <a href="#education" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Education</a>
-            <a href="#educational-awards" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Educational Awards</a>
-            <a href="#extracurricular-involvement" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Extracurricular Involvement</a>
-            <button onclick="window.location.href='contactforms.html'" class="nav-link chat-button">Chat with Me</button>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#awards" class="nav-link">Awards</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button onclick="window.location.href='contactforms.html'" class="chat-button">Chat with Me</button>
         </nav>
     </div>
 
-    <div id="name-button-container">
-        <button onclick="askName()" id="enter-name-button">Enter Your Name</button>
-        <p id="displayName"></p>
+    <!-- Main Content Area -->
+    <div id="main-content">
+        <h1>Welcome to My Personal Website!</h1>
+        <img id="profilePicture" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()">
+        <p>I'm Deenorth Naganathan, and this is my personal space to share my experiences and achievements. Feel free to explore!</p>
+
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>High School: The Woodlands Secondary School (2016-2020)</li>
+                <li>University: Toronto Metropolitan University (2020-PRESENT)</li>
+                <li>Program: Business Technology Management</li>
+            </ul>
+        </section>
+
+        <section id="awards">
+            <h2>Educational Awards</h2>
+            <ul>
+                <li>Entrance Scholarship of $5000, Toronto Metropolitan University</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out if you'd like to connect!</p>
+        </section>
     </div>
-
-    <h1>Welcome!</h1>
-    <img id="profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()">
-
-    <p>My name is Deenorth Naganathan and welcome to my website!</p>
-
-    <h2 id="education">Education</h2>
-    <ul>
-        <li>High School: The Woodlands Secondary School (2016-2020)</li>
-        <li>University: Toronto Metropolitan University (2020-PRESENT)</li>
-        <li>Program: Business Technology Management</li>
-    </ul>
-
-    <h2>Program/Courses</h2>
-    <p>In the Business Technology Management degree program, you'll learn business fundamentals and drive ICT-based innovation through an optional co-op, case studies, and modern classrooms and labs. You'll learn to assess business needs, build technology-based solutions, and explain them.</p>
-    <p>One of my most useful courses that I have taken so far in my studies would be ITM550 because I was always so interested and wanted to learn how to use Shopify and be familiar with the interface.</p>
-
-    <h2 id="educational-awards">Educational Awards</h2>    
-    <ul>
-        <li>Entrance Scholarship of $5000, Toronto Metropolitan University</li>
-    </ul>
-
-    <hr>
-
-    <h2 id="extracurricular-involvement">Extracurricular Involvement</h2>
-    <p>Toronto Metropolitan University</p>
-    <ul>
-        <li>General Member @ Tamil Student Association</li>
-    </ul>
-
-    <p>The Woodlands Secondary School</p>
-    <ul>
-        <li>Robotics Team Leader for VEX</li>
-        <li>Gaming Society Member</li>
-        <li>Varsity Basketball Team</li>
-    </ul>
-
-    <h2>Links and Descriptions</h2>
-    <div class="table-container">
-        <div class="table-row">
-            <div class="table-cell"><a href="https://www.linkedin.com/in/deenorth-naganathan-377a30b8/">LinkedIn</a></div>
-            <div class="table-cell">Visit my LinkedIn profile to connect with me professionally.</div>
-        </div>
-        <div class="table-row">
-            <div class="table-cell"><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></div>
-            <div class="table-cell">Learn more about my university and its programs.</div>
-        </div>
-    </div>
-
-    <h3>Additional Information</h3>
-    <p>Feel free to reach out to me if you would like to learn more about my experiences.</p>
-
 </body>
 </html>
