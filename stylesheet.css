@@ -2,8 +2,8 @@
 body {
     font-family: Arial, sans-serif;
     font-size: 14pt;
-    background-color: #f4f7fa; /* Light grey-blue background for a soft, clean look */
-    color: #333; /* Darker text color for readability */
+    background-color: #2a2a3b; /* Dark gray background for a soft dark mode */
+    color: #e0e0e0; /* Light gray text for readability */
     margin: 20px;
 }
 
@@ -13,48 +13,42 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: #2a3a5e; /* Darker blue for navbar background */
+    background-color: #1a1a2e; /* Darker charcoal for navbar */
     color: #ffffff;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
-}
-
-#navbar nav {
-    display: flex;
-    gap: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
 }
 
 #navbar .nav-link {
-    color: #ffffff;
+    color: #b0c4de; /* Light steel blue for nav links */
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease;
 }
 
 #navbar .nav-link:hover {
-    background-color: #40597e; /* Softer blue for hover effect */
-    color: #e0e6ed; /* Slightly lighter color for contrast on hover */
+    background-color: #40597e; /* Softer blue on hover */
+    color: #f4f7fa; /* Lighter color for contrast on hover */
 }
 
 /* Chat with Me Button Styling */
 #navbar .chat-button {
-    background-color: #40597e; /* Darker blue background */
-    color: #ffffff; /* White text */
+    background-color: #3b5998; /* Deep blue for button */
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     font-size: 14px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    transition: background-color 0.3s ease;
 }
 
 #navbar .chat-button:hover {
-    background-color: #6082b6; /* Lighter blue on hover */
-    color: #e0e6ed; /* Light grey text for contrast */
+    background-color: #6b8bb8; /* Lighter blue on hover */
 }
 
 /* Centered Name Button Container */
@@ -74,7 +68,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 5px; /* Spacing between button and display name text */
 }
 
 #enter-name-button:hover {
@@ -89,24 +82,17 @@ body {
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    background-color: #3c3f58; /* Slightly lighter dark color for form background */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     margin-top: 30px;
+    color: #e0e0e0;
 }
 
 /* Form Styling */
-form#contactme {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 100%;
-}
-
 form#contactme h2 {
-    color: #2a3a5e; /* Matching theme color for section headers */
+    color: #b0c4de; /* Soft blue for section headers */
     font-size: 20pt;
-    text-align: left;
 }
 
 form#contactme input[type="text"],
@@ -117,10 +103,10 @@ form#contactme textarea {
     width: 100%;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid #d1d9e6;
+    border: 1px solid #4b4f6b;
     border-radius: 5px;
-    background-color: #f4f7fa;
-    color: #333;
+    background-color: #2a2a3b; /* Matches body background */
+    color: #e0e0e0;
 }
 
 form#contactme input[type="radio"],
@@ -128,14 +114,9 @@ form#contactme input[type="checkbox"] {
     margin-right: 5px;
 }
 
-form#contactme textarea {
-    height: 100px;
-    resize: vertical;
-}
-
 /* Button Styling for Form Buttons */
 #Submit, #clear-reset {
-    background-color: #40597e;
+    background-color: #3b5998;
     color: #ffffff;
     border: none;
     padding: 10px 15px;
@@ -148,12 +129,12 @@ form#contactme textarea {
 }
 
 #Submit:hover, #clear-reset:hover {
-    background-color: #6082b6;
+    background-color: #6b8bb8;
 }
 
 /* Go Back Button Styling */
 #go-back-button {
-    background-color: #40597e;
+    background-color: #3b5998;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -161,98 +142,55 @@ form#contactme textarea {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
 }
 
 #go-back-button:hover {
-    background-color: #6082b6;
+    background-color: #6b8bb8;
 }
 
 /* Header and Heading Styling */
 h1 {
     font-size: 36pt;
-    color: #2a3a5e; /* Matches the navbar */
+    color: #b0c4de;
     font-weight: bold;
-    margin-top: 10px;
 }
 
 h2 {
     font-size: 26pt;
-    color: #40597e; /* Softer blue for subheadings */
+    color: #40597e;
 }
 
 h3 {
     font-size: 20pt;
-    color: #6082b6; /* Lighter shade for h3 */
-    font-weight: normal;
+    color: #6082b6;
 }
 
 /* Paragraph and Link Styling */
 p {
     font-size: 14pt;
-    color: #555; /* Medium grey for body text */
-    line-height: 1.8; /* Increased line height for readability */
-    max-width: 800px; /* Limit paragraph width for easy reading */
+    color: #d0d0d0;
+    line-height: 1.8;
+    max-width: 800px;
 }
 
 a:link, a:visited {
-    color: #1e7cb1; /* Blue link color */
+    color: #87b9de;
     text-decoration: none;
 }
 
 a:hover {
-    color: #d94f4f; /* Accent color for link hover */
+    color: #b0c4de;
     text-decoration: underline;
-}
-
-a:active {
-    color: #b23a3a;
-}
-
-/* List Styling */
-ul {
-    list-style-type: square;
-    padding-left: 20px;
-}
-
-hr {
-    margin: 30px 0;
-    border: 0.5px solid #d1d9e6; /* Subtle line to separate sections */
 }
 
 /* Table Styling */
 .table-container {
-    display: table;
-    width: 100%;
-    margin-top: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    background-color: #3c3f58;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
 
-.table-row {
-    display: table-row;
-}
-
-.table-cell {
-    display: table-cell;
-    padding: 10px;
-    border: 1px solid #d1d9e6;
-    color: #333;
-}
-
 /* Profile Picture Styling */
-#profilePicture { 
-    max-width: 120px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Adds a nice shadow effect */
-}
-
-/* Sidebar Styling */
-#sidebar {
-    background-color: #40597e; /* Soft blue for sidebar */
-    color: #ffffff;
-    padding: 30px;
-    width: 300px;
-    border-radius: 8px;
+#profilePicture {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
 }
