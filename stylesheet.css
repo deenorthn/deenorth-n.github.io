@@ -1,9 +1,9 @@
 ﻿/* General body styling */
 body {
-    font-family: 'Lato', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14pt;
-    background-color: #2e2e3e; /* Dark charcoal background */
-    color: #e0e0e0; /* Soft light gray for text */
+    background-color: #f4f7fa; /* Light grey-blue background for a soft, clean look */
+    color: #333; /* Darker text color for readability */
     margin: 20px;
 }
 
@@ -13,13 +13,13 @@ body {
     justify-content: center;
     align-items: center;
     padding: 15px;
-    background-color: #1f1f2e; /* Darker charcoal for navbar */
+    background-color: #2a3a5e; /* Darker blue for navbar background */
     color: #ffffff;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Slightly stronger shadow for contrast */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a polished look */
 }
 
 #navbar nav {
@@ -28,21 +28,45 @@ body {
 }
 
 #navbar .nav-link {
-    color: #b3c7e6; /* Soft pastel blue for nav links */
+    color: #ffffff;
     text-decoration: none;
     padding: 10px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
 
 #navbar .nav-link:hover {
-    background-color: #40597e; /* Slightly brighter blue */
-    color: #f4f7fa; /* Light background for hover contrast */
+    background-color: #40597e; /* Softer blue for hover effect */
+    color: #e0e6ed; /* Slightly lighter color for contrast on hover */
 }
 
-/* Chat Button */
+/* Chat with Me Button Styling */
 #navbar .chat-button {
-    background-color: #3a506b; /* Muted teal for button */
+    background-color: #40597e; /* Darker blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+#navbar .chat-button:hover {
+    background-color: #6082b6; /* Lighter blue on hover */
+    color: #e0e6ed; /* Light grey text for contrast */
+}
+
+/* Centered Name Button Container */
+#name-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#enter-name-button {
+    background-color: #40597e; /* Matching theme color */
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -50,42 +74,41 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 5px; /* Spacing between button and display name text */
 }
 
-#navbar .chat-button:hover {
-    background-color: #6b8aa1; /* Lighter teal on hover */
-}
-
-/* Section Heading and Text Styling */
-h1 {
-    font-size: 36pt;
-    color: #b3c7e6; /* Matches link colors */
-    font-weight: bold;
-}
-
-h2 {
-    font-size: 26pt;
-    color: #6b8aa1; /* Soft teal for subheadings */
-}
-
-h3 {
-    font-size: 20pt;
-    color: #8a99b1; /* Lighter, desaturated teal */
-    font-weight: normal;
+#enter-name-button:hover {
+    background-color: #6082b6;
 }
 
 /* Contact Page Section Styling */
 #contact-section {
-    background-color: #3b3b4e; /* Dark slate for form background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
     max-width: 600px;
     margin: auto;
-    color: #e0e0e0;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
     border-radius: 8px;
+    margin-top: 30px;
 }
 
 /* Form Styling */
+form#contactme {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+form#contactme h2 {
+    color: #2a3a5e; /* Matching theme color for section headers */
+    font-size: 20pt;
+    text-align: left;
+}
+
 form#contactme input[type="text"],
 form#contactme input[type="email"],
 form#contactme input[type="tel"],
@@ -94,15 +117,20 @@ form#contactme textarea {
     width: 100%;
     padding: 10px;
     font-size: 14px;
-    border: 1px solid #50506b;
+    border: 1px solid #d1d9e6;
     border-radius: 5px;
-    background-color: #2e2e3e; /* Matches body background */
-    color: #e0e0e0;
+    background-color: #f4f7fa;
+    color: #333;
 }
 
 form#contactme input[type="radio"],
 form#contactme input[type="checkbox"] {
     margin-right: 5px;
+}
+
+form#contactme textarea {
+    height: 100px;
+    resize: vertical;
 }
 
 /* Button Styling for Form Buttons */
@@ -120,7 +148,7 @@ form#contactme input[type="checkbox"] {
 }
 
 #Submit:hover, #clear-reset:hover {
-    background-color: #6b8aa1; /* Lighter teal on hover */
+    background-color: #6082b6;
 }
 
 /* Go Back Button Styling */
@@ -133,26 +161,98 @@ form#contactme input[type="checkbox"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-bottom: 20px;
 }
 
 #go-back-button:hover {
-    background-color: #6b8aa1;
+    background-color: #6082b6;
+}
+
+/* Header and Heading Styling */
+h1 {
+    font-size: 36pt;
+    color: #2a3a5e; /* Matches the navbar */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 26pt;
+    color: #40597e; /* Softer blue for subheadings */
+}
+
+h3 {
+    font-size: 20pt;
+    color: #6082b6; /* Lighter shade for h3 */
+    font-weight: normal;
 }
 
 /* Paragraph and Link Styling */
 p {
     font-size: 14pt;
-    color: #d0d0d0; /* Lighter text color for readability */
-    line-height: 1.8;
-    max-width: 800px;
+    color: #555; /* Medium grey for body text */
+    line-height: 1.8; /* Increased line height for readability */
+    max-width: 800px; /* Limit paragraph width for easy reading */
 }
 
 a:link, a:visited {
-    color: #b3c7e6; /* Soft pastel blue */
+    color: #1e7cb1; /* Blue link color */
     text-decoration: none;
 }
 
 a:hover {
-    color: #6b8aa1;
+    color: #d94f4f; /* Accent color for link hover */
     text-decoration: underline;
+}
+
+a:active {
+    color: #b23a3a;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0.5px solid #d1d9e6; /* Subtle line to separate sections */
+}
+
+/* Table Styling */
+.table-container {
+    display: table;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    border-radius: 5px;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid #d1d9e6;
+    color: #333;
+}
+
+/* Profile Picture Styling */
+#profilePicture { 
+    max-width: 120px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Adds a nice shadow effect */
+}
+
+/* Sidebar Styling */
+#sidebar {
+    background-color: #40597e; /* Soft blue for sidebar */
+    color: #ffffff;
+    padding: 30px;
+    width: 300px;
+    border-radius: 8px;
 }
