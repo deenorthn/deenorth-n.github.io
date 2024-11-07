@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>Deenorth Naganathan's Website</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="main.js"></script> <!-- Links the JavaScript code -->
+    <script src="main.js" defer></script> <!-- Correctly linking the JavaScript file with "defer" to load after HTML -->
 </head>
 <body>
-    <div id="navbar"> <!-- Centered Navigation Bar -->
+    <div id="navbar">
         <nav>
             <a href="#education" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Education</a>
             <a href="#educational-awards" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Educational Awards</a>
@@ -16,17 +16,17 @@
         </nav>
     </div>
 
-    <div id="name-button-container"> <!-- Centered "Enter Your Name" Button -->
+    <div id="name-button-container">
         <button onclick="askName()" id="enter-name-button">Enter Your Name</button>
-        <p id="displayName"></p> <!-- Inputted name displayed from the prompt -->
+        <p id="displayName"></p>
     </div>
 
     <h1>Welcome!</h1>
-    <img id="profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()"> <!-- Enables the toggle for image size -->
+    <img id="profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()">
 
     <p>My name is Deenorth Naganathan and welcome to my website!</p>
 
-    <h2 id="education">Education</h2> <!-- Hyperlinking this education section to the sidebar -->
+    <h2 id="education">Education</h2>
     <ul>
         <li>High School: The Woodlands Secondary School (2016-2020)</li>
         <li>University: Toronto Metropolitan University (2020-PRESENT)</li>
