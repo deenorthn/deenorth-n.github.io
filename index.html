@@ -4,27 +4,21 @@
     <meta charset="utf-8">
     <title>Deenorth Naganathan's Website</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="main.js" defer></script> <!-- Links the JavaScript code correctly -->
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div id="navbar">
         <nav>
-            <a href="#education" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Education</a>
-            <a href="#educational-awards" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Educational Awards</a>
-            <a href="#extracurricular-involvement" class="nav-link" onmouseover="highlightLink(this)" onmouseout="resetLink(this)">Extracurricular Involvement</a>
+            <a href="#education" class="nav-link">Education</a>
+            <a href="#awards" class="nav-link">Awards</a>
+            <a href="#contact" class="nav-link">Contact</a>
             <button onclick="window.location.href='contactforms.html'" class="nav-link chat-button">Chat with Me</button>
         </nav>
     </div>
 
-    <div id="name-button-container">
-        <button onclick="askName()" id="enter-name-button">Enter Your Name</button>
-        <p id="displayName"></p>
-    </div>
-
-    <h1>Deenorth Naganathan's Personal Portfolio Wesbite</h1>
-    <img id="profilePicture" class="small" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()">
-
-    <p>My name is Deenorth Naganathan and welcome to my website!</p>
+    <h1>Welcome to My Personal Website!</h1>
+    <img id="profilePicture" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()">
+    <p class="intro-text">My name is Deenorth Naganathan and welcome to my website!</p>
 
     <h2 id="education">Education</h2>
     <ul>
@@ -71,6 +65,5 @@
 
     <h3>Additional Information</h3>
     <p>Feel free to reach out to me if you would like to learn more about my experiences.</p>
-
 </body>
 </html>
