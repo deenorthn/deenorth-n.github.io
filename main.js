@@ -67,3 +67,19 @@ function storeData() {
 
     alert("Message Sent!\nThank you for reaching out, I will get back to you as soon as possible.");
 }
+
+// Function to validate contact form fields
+function validateForm() {
+    const name = document.getElementById("fullname").value;
+    const email = document.getElementById("email").value;
+    if (!name || !email) {
+        alert("Please fill in both your name and email.");
+        return false;
+    }
+    return true;
+}
+
+// Function to hide the loading message once the video loads
+function hideLoadingMessage() {
+    document.getElementById("loading-message").style.display = "none";
+}

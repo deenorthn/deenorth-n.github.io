@@ -5,19 +5,22 @@
     <title>Deenorth Naganathan's Website</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="main.js" defer></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon -->
 </head>
 <body>
+
+    <!-- Navbar -->
     <div id="navbar">
         <nav>
             <a href="#education" class="nav-link">Education</a>
             <a href="#awards" class="nav-link">Awards</a>
             <a href="#contact" class="nav-link">Contact</a>
-            <button onclick="window.location.href='contactforms.html'" class="nav-link chat-button">Chat with Me</button>
+            <button onclick="window.location.href='contactforms.html'" class="nav-link chat-button" role="button" aria-label="Chat with me">Chat with Me</button>
         </nav>
     </div>
 
     <h1>Welcome to My Digital Space!</h1>
-    <img id="profilePicture" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()">
+    <img id="profilePicture" src="image.jpg" alt="Deenorth Naganathan" onclick="toggleImageSize()" role="img">
     <p class="intro-text">Hello! I'm Deenorth Naganathan, explore my education, achievements, and more about my journey in Business Technology Management. Let’s connect!</p>
 
     <h2 id="education">Education</h2>
@@ -54,11 +57,11 @@
     <h2>Links and Descriptions</h2>
     <div class="table-container">
         <div class="table-row">
-            <div class="table-cell"><a href="https://www.linkedin.com/in/deenorth-naganathan-377a30b8/">LinkedIn</a></div>
+            <div class="table-cell"><a href="https://www.linkedin.com/in/deenorth-naganathan-377a30b8/" target="_blank" aria-label="LinkedIn Profile"><img src="linkedin-icon.png" alt="LinkedIn Icon"> LinkedIn</a></div>
             <div class="table-cell">Visit my LinkedIn profile to connect with me professionally.</div>
         </div>
         <div class="table-row">
-            <div class="table-cell"><a href="https://www.torontomu.ca/">Toronto Metropolitan University</a></div>
+            <div class="table-cell"><a href="https://www.torontomu.ca/" target="_blank" aria-label="Toronto Metropolitan University"><img src="university-icon.png" alt="University Icon"> Toronto Metropolitan University</a></div>
             <div class="table-cell">Learn more about my university and its programs.</div>
         </div>
     </div>
@@ -67,34 +70,41 @@
     <p>Feel free to reach out to me if you would like to learn more about my experiences.</p>
 
     <!-- Accessibility Components -->
-    <h2>"Grit and Innovation: The Spirit of Toronto Metropolitan University"</h2>
+    <h2>Grit and Innovation: The Spirit of Toronto Metropolitan University</h2>
 
-    <!-- Embedded Video with Caption -->
-    <figure>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/srQF6d3Rr_Q" title="Toronto Metropolitan University Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <figcaption>Video source: Toronto Metropolitan University (2023). [Video]. YouTube. https://www.youtube.com/watch?v=srQF6d3Rr_Q&ab_channel=TorontoMetropolitanUniversity</figcaption>
-    </figure>
+    <!-- Embedded Video with Loading Animation -->
+    <div class="video-container">
+        <div id="loading-message">Loading Video...</div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/srQF6d3Rr_Q" title="Toronto Metropolitan University Overview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onload="hideLoadingMessage()"></iframe>
+    </div>
+    <figcaption>Video source: Toronto Metropolitan University (2023). [Video]. YouTube. https://www.youtube.com/watch?v=srQF6d3Rr_Q&ab_channel=TorontoMetropolitanUniversity</figcaption>
 
-    <button onclick="increaseTextSize()">Increase Text Size</button>
-    <button onclick="toggleColorBlindMode()">Toggle Color Mode</button>
+    <button onclick="increaseTextSize()" title="Increase Text Size">Increase Text Size</button>
+    <button onclick="toggleColorBlindMode()" title="Toggle Color Mode">Toggle Color Mode</button>
 
     <!-- Centered Row of Images with Alt-Text Buttons -->
     <div class="image-row">
         <div class="image-container">
             <img src="bc.jpg" alt="Stanley Park, Park in Vancouver, British Columbia" id="image1">
-            <button onclick="showAltText('image1')">Show Alt Text</button>
+            <button onclick="showAltText('image1')" title="Show Alt Text for BC Image">Show Alt Text</button>
         </div>
 
         <div class="image-container">
             <img src="italy.jpg" alt="Colosseum, Historical landmark in Rome, Italy" id="image2">
-            <button onclick="showAltText('image2')">Show Alt Text</button>
+            <button onclick="showAltText('image2')" title="Show Alt Text for Italy Image">Show Alt Text</button>
         </div>
 
         <div class="image-container">
             <img src="toronto.jpg" alt="Gerrard Street, Black Pony Cafe, Toronto Ontario" id="image3">
-            <button onclick="showAltText('image3')">Show Alt Text</button>
+            <button onclick="showAltText('image3')" title="Show Alt Text for Toronto Image">Show Alt Text</button>
         </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Deenorth Naganathan. All rights reserved.</p>
+        <p>Contact: <a href="mailto:deenorth@example.com">deenorth@example.com</a></p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
