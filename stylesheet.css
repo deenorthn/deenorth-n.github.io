@@ -255,3 +255,9 @@ hr {
     border: 1px solid #d1d9e6;
     color: #333;
 }
+
+/* Color-Blind Mode */
+.color-blind-mode {
+    background-color: #dcdcdc;
+    color: #333;
+}

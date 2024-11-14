@@ -1,10 +1,10 @@
 // Function to prompt the user for their name and display it
 function askName() {
-    var name = prompt("Please enter your name", "Name"); // Prompting the user to type in their name
+    var name = prompt("Please enter your name", "Name");
     if (name) { 
-        document.getElementById("displayName").innerText = "Hello, " + name + "!"; // Display user's name if entered
+        document.getElementById("displayName").innerText = "Hello, " + name + "!";
     } else {
-        document.getElementById("displayName").innerText = "Hello!"; // Fallback message if no name was provided
+        document.getElementById("displayName").innerText = "Hello!";
     }
 }
 
@@ -12,10 +12,26 @@ function askName() {
 function toggleImageSize() {
     var image = document.getElementById("profilePicture");
     if (image.style.transform === "scale(2)") {
-        image.style.transform = "scale(1)"; // Reset to original size
+        image.style.transform = "scale(1)";
     } else {
-        image.style.transform = "scale(2)"; // Enlarge image
+        image.style.transform = "scale(2)";
     }
+}
+
+// Function to increase text size
+function increaseTextSize() {
+    document.body.style.fontSize = 'larger';
+}
+
+// Function to toggle color-blind mode
+function toggleColorBlindMode() {
+    document.body.classList.toggle('color-blind-mode');
+}
+
+// Function to display alt text for images
+function showAltText(imageId) {
+    const image = document.getElementById(imageId);
+    alert(image.alt);
 }
 
 // Function to highlight navigation link on hover
@@ -32,8 +48,8 @@ function resetLink(link) {
 
 // Function to clear form fields and localStorage data
 function resetContact() {
-    document.getElementById("contactme").reset(); // Reset form fields
-    localStorage.clear(); // Clear local storage
+    document.getElementById("contactme").reset();
+    localStorage.clear();
     alert("Form has been cleared!");
 }
 
@@ -44,7 +60,6 @@ function storeData() {
     var cell = document.getElementById("cell").value;
     var message = document.getElementById("Message").value;
 
-    // Save data to localStorage
     localStorage.setItem("name", name);
     localStorage.setItem("email", email);
     localStorage.setItem("cell", cell);
