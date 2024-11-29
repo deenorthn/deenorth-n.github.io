@@ -332,3 +332,28 @@ footer a {
 footer a:hover {
     color: #d1d9e6;
 }
+
+/* Education Section Styling */
+.education-entry {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #d1d9e6; /* Adds a subtle divider between entries */
+    padding-bottom: 10px;
+}
+
+.education-details h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.education-details p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}
+
+.education-dates {
+    font-style: italic; /* Emphasizes the dates */
+    color: #777; /* Subtle, lighter color for dates */
+}
