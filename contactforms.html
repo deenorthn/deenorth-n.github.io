@@ -14,17 +14,23 @@
     </div>
 
     <div id="contact-section">
-        <button onclick="window.location.href='index.html'" id="go-back-button">Go Back</button>
+        <button onclick="window.location.href='index.html'" id="go-back-button" aria-label="Go Back to Homepage">Go Back</button>
         <form id="contactme">
             <h2>Enter Your Information</h2>
-            <input placeholder="Full Name" id="fullname" type="text">
-            <input placeholder="Email" id="email" type="email">
-            <input placeholder="Cell" id="cell" type="tel">
+            <input placeholder="Full Name" id="fullname" type="text" required>
+            <input placeholder="Email" id="email" type="email" required>
+            <input placeholder="Cell" id="cell" type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required>
 
             <h2>Preferred Contact Method</h2>
-            <input type="radio" id="cellContact" name="contactMethod" value="Cell"> Cell
-            <input type="radio" id="emailContact" name="contactMethod" value="Email"> Email
-            <input type="radio" id="bothContact" name="contactMethod" value="Both"> Both
+            <label>
+                <input type="radio" id="cellContact" name="contactMethod" value="Cell" required> Cell
+            </label>
+            <label>
+                <input type="radio" id="emailContact" name="contactMethod" value="Email"> Email
+            </label>
+            <label>
+                <input type="radio" id="bothContact" name="contactMethod" value="Both"> Both
+            </label>
 
             <h2>Availability</h2>
             <label><input type="checkbox" id="Morning" name="Morning" value="Morning"> Morning (9am-11am)</label>
@@ -32,17 +38,17 @@
             <label><input type="checkbox" id="Evening" name="Evening" value="Evening"> Evening (6pm-9pm)</label>
 
             <h2>Reason for Contacting</h2>
-            <select id="options" name="options">
-                <option value="default">Please Select</option>
+            <select id="options" name="options" required>
+                <option value="" disabled selected>Please Select</option>
                 <option value="option1">Job Opportunity</option>
                 <option value="option2">Networking</option>
                 <option value="option3">Other</option>
             </select>
 
             <h2>Send a Message</h2>
-            <textarea placeholder="Enter Your Message Here" id="Message"></textarea>
-            <input value="Submit" id="Submit" type="button" onclick="storeData()">
-            <input value="Clear/Reset" id="clear-reset" type="button" onclick="resetContact()">
+            <textarea placeholder="Enter Your Message Here" id="Message" required></textarea>
+            <button type="button" id="Submit" onclick="storeData()">Submit</button>
+            <button type="button" id="clear-reset" onclick="resetContact()">Clear/Reset</button>
         </form>
     </div>
 
