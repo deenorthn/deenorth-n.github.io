@@ -400,3 +400,11 @@ footer a:hover {
     color: #d94f4f; /* Subtle hover effect for links */
 }
 
+/* Centered Title Styling */
+.centered {
+    text-align: center;
+    font-size: 26pt; /* Adjust size for a consistent look */
+    color: #2a3a5e;  /* Matches the theme */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the title */
+}
