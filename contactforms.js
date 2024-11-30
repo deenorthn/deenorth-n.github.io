@@ -1,22 +1,32 @@
+// Resets the form fields and clears localStorage
+function resetContact() {
+    document.getElementById("contactme").reset(); // Clears all input fields in the form
+    localStorage.clear(); // Clears any saved data in localStorage
+    alert("Form has been cleared!"); // Notify the user about the reset
+}
+
+// Stores form data in localStorage
 function storeData() {
-    const name = document.getElementById("fullname").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const cell = document.getElementById("cell").value.trim();
+    // Collect form inputs
+    const name = document.getElementById("fullname").value;
+    const email = document.getElementById("email").value;
+    const cell = document.getElementById("cell").value;
     const contactMethod = document.querySelector('input[name="contactMethod"]:checked')?.value || '';
     const availability = [
         document.getElementById("Morning").checked ? "Morning" : "",
         document.getElementById("Afternoon").checked ? "Afternoon" : "",
         document.getElementById("Evening").checked ? "Evening" : ""
-    ].filter(Boolean).join(", ");
+    ].filter(Boolean).join(", "); // Joins selected checkboxes into a single string
     const option = document.getElementById("options").value;
-    const message = document.getElementById("Message").value.trim();
+    const message = document.getElementById("Message").value;
 
-    if (!name || !email || !cell || !contactMethod || !option || !message) {
-        displayFeedback("Please fill out all required fields.", "red");
+    // Check for required fields
+    if (!contactMethod || !option) {
+        alert("Please complete all required fields.");
         return;
     }
 
-    // Save form data in localStorage
+    // Store form data in localStorage
     localStorage.setItem("contactForm_name", name);
     localStorage.setItem("contactForm_email", email);
     localStorage.setItem("contactForm_cell", cell);
@@ -25,14 +35,6 @@ function storeData() {
     localStorage.setItem("contactForm_option", option);
     localStorage.setItem("contactForm_message", message);
 
-    displayFeedback("Message Sent! Thank you for reaching out.", "green");
-}
-
-// Helper function to display feedback
-function displayFeedback(message, color) {
-    const feedback = document.getElementById("form-feedback");
-    feedback.style.display = "block";
-    feedback.style.color = color;
-    feedback.innerText = message;
-    setTimeout(() => feedback.style.display = "none", 5000); // Auto-hide after 5 seconds
+    // Notify user about successful submission
+    alert("Message Sent!\nThank you for contacting me; I will respond as soon as I can.");
 }

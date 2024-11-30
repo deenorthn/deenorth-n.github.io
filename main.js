@@ -10,7 +10,7 @@ function askName() {
 
 // Function to toggle image size on click
 function toggleImageSize() {
-    const image = document.getElementById("profilePicture");
+    var image = document.getElementById("profilePicture");
     if (image.style.transform === "scale(2)") {
         image.style.transform = "scale(1)";
     } else {
