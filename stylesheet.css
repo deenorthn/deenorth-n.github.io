@@ -358,8 +358,17 @@ footer a:hover {
     color: #777; /* Subtle, lighter color for dates */
 }
 
-/* Align Section Title to Left */
-.centered {
+/* Centered Section Title */
+.centered-title {
+    text-align: center;
+    font-size: 26px;
+    color: #2a3a5e;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Left-Aligned Section Title for Additional Information */
+.left-aligned-title {
     text-align: left;
     font-size: 26px;
     color: #2a3a5e;
