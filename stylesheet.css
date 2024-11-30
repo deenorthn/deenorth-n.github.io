@@ -358,44 +358,43 @@ footer a:hover {
     color: #777; /* Subtle, lighter color for dates */
 }
 
-/* Additional Information Section Styling */
+/* Align Section Title to Left */
+.centered {
+    text-align: left;
+    font-size: 26px;
+    color: #2a3a5e;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Additional Information Box Styling */
 .additional-info {
-    background-color: #f4f7fa; /* Subtle light gray background */
+    background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
-    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px 20px 20px;
     line-height: 1.6;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: calc(100% - 40px);
 }
 
-.additional-info p {
-    color: #555;
-    font-size: 14pt;
-    margin-bottom: 15px;
-}
-
-.additional-info ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-top: 15px;
-    color: #555;
-}
-
+/* Text and List Styling Inside the Box */
+.additional-info p, 
 .additional-info ul li {
-    margin-bottom: 10px;
     font-size: 14pt;
+    color: #555;
+    margin: 5px 0;
 }
 
+/* Link Styling */
 .additional-info a {
-    color: #1e7cb1; /* Blue color for links */
+    color: #1e7cb1;
     text-decoration: none;
     font-weight: bold;
 }
 
 .additional-info a:hover {
     text-decoration: underline;
-    color: #d94f4f; /* Subtle hover effect for links */
+    color: #d94f4f;
 }
