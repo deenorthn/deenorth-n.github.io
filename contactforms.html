@@ -6,21 +6,30 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <div id="navbar">
         <nav>
             <a href="index.html" class="nav-link">Home</a>
         </nav>
     </div>
 
+    <!-- Contact Section -->
     <div id="contact-section">
+        <!-- Button to navigate back to the homepage -->
         <button onclick="window.location.href='index.html'" id="go-back-button" aria-label="Go Back to Homepage">Go Back</button>
+        
+        <!-- Contact Form -->
         <form id="contactme">
             <h2>Enter Your Information</h2>
+            <!-- Input for full name -->
             <input placeholder="Full Name" id="fullname" type="text" required>
+            <!-- Input for email address -->
             <input placeholder="Email" id="email" type="email" required>
+            <!-- Input for phone number -->
             <input placeholder="Cell" id="cell" type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required>
 
             <h2>Preferred Contact Method</h2>
+            <!-- Radio buttons to choose contact method -->
             <label>
                 <input type="radio" id="cellContact" name="contactMethod" value="Cell" required> Cell
             </label>
@@ -32,11 +41,13 @@
             </label>
 
             <h2>Availability</h2>
+            <!-- Checkboxes for availability -->
             <label><input type="checkbox" id="Morning" name="Morning" value="Morning"> Morning (9am-11am)</label>
             <label><input type="checkbox" id="Afternoon" name="Afternoon" value="Afternoon"> Afternoon (12pm-6pm)</label>
             <label><input type="checkbox" id="Evening" name="Evening" value="Evening"> Evening (6pm-9pm)</label>
 
             <h2>Reason for Contacting</h2>
+            <!-- Dropdown for selecting the reason -->
             <select id="options" name="options" required>
                 <option value="" disabled selected>Please Select</option>
                 <option value="option1">Job Opportunity</option>
@@ -45,12 +56,16 @@
             </select>
 
             <h2>Send a Message</h2>
+            <!-- Textarea for custom message -->
             <textarea placeholder="Enter Your Message Here" id="Message" required></textarea>
+            
+            <!-- Form buttons for submission and resetting -->
             <button type="button" id="Submit" onclick="storeData()">Submit</button>
             <button type="button" id="clear-reset" onclick="resetContact()">Clear/Reset</button>
         </form>
     </div>
 
+    <!-- JavaScript file for form functionality -->
     <script src="contactforms.js"></script>
 </body>
 </html>
