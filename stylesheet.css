@@ -367,33 +367,24 @@ footer a:hover {
     margin-bottom: 20px;
 }
 
-/* Left-Aligned Section Title for Additional Information */
-.left-aligned-title {
-    text-align: left;
-    font-size: 26px;
-    color: #2a3a5e;
-    font-weight: bold;
-    margin-bottom: 20px;
-    margin-left: 20px;
-}
-
-/* Additional Information Box Styling */
+/* Center-Aligned Additional Information Box */
 .additional-info {
     background-color: #f4f7fa;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 20px 20px 20px;
-    line-height: 1.6;
-    max-width: calc(100% - 40px);
+    margin: 20px auto;
+    line-height: 1.8;
+    max-width: 800px;
+    text-align: center; /* Center-aligns the content */
 }
 
-/* Text and List Styling Inside the Box */
+/* Text Styling for Inside the Box */
 .additional-info p, 
 .additional-info ul li {
     font-size: 14pt;
     color: #555;
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
 /* Link Styling */
