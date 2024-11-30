@@ -15,39 +15,38 @@
 
     <!-- Contact Section -->
     <div id="contact-section">
-        <!-- Button to navigate back to the homepage -->
-        <button onclick="window.location.href='index.html'" id="go-back-button" aria-label="Go Back to Homepage">Go Back</button>
-        
+        <!-- Feedback message area for form submission -->
+        <div id="form-feedback" style="display: none; color: green; font-weight: bold;"></div>
+
         <!-- Contact Form -->
-        <form id="contactme">
+        <form id="contactme" novalidate>
             <h2>Enter Your Information</h2>
-            <!-- Input for full name -->
-            <input placeholder="Full Name" id="fullname" type="text" required>
-            <!-- Input for email address -->
-            <input placeholder="Email" id="email" type="email" required>
-            <!-- Input for phone number -->
-            <input placeholder="Cell" id="cell" type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required>
+            <label for="fullname">Full Name</label>
+            <input placeholder="Full Name" id="fullname" type="text" required aria-label="Enter your full name">
+
+            <label for="email">Email</label>
+            <input placeholder="Email" id="email" type="email" required aria-label="Enter your email address">
+
+            <label for="cell">Phone Number</label>
+            <input placeholder="Cell" id="cell" type="tel" pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required aria-label="Enter your phone number">
 
             <h2>Preferred Contact Method</h2>
-            <!-- Radio buttons to choose contact method -->
-            <label>
-                <input type="radio" id="cellContact" name="contactMethod" value="Cell" required> Cell
-            </label>
-            <label>
-                <input type="radio" id="emailContact" name="contactMethod" value="Email"> Email
-            </label>
-            <label>
-                <input type="radio" id="bothContact" name="contactMethod" value="Both"> Both
-            </label>
+            <label for="cellContact">Cell</label>
+            <input type="radio" id="cellContact" name="contactMethod" value="Cell" required>
+
+            <label for="emailContact">Email</label>
+            <input type="radio" id="emailContact" name="contactMethod" value="Email">
+
+            <label for="bothContact">Both</label>
+            <input type="radio" id="bothContact" name="contactMethod" value="Both">
 
             <h2>Availability</h2>
-            <!-- Checkboxes for availability -->
-            <label><input type="checkbox" id="Morning" name="Morning" value="Morning"> Morning (9am-11am)</label>
-            <label><input type="checkbox" id="Afternoon" name="Afternoon" value="Afternoon"> Afternoon (12pm-6pm)</label>
-            <label><input type="checkbox" id="Evening" name="Evening" value="Evening"> Evening (6pm-9pm)</label>
+            <label for="Morning"><input type="checkbox" id="Morning" name="Morning" value="Morning"> Morning (9am-11am)</label>
+            <label for="Afternoon"><input type="checkbox" id="Afternoon" name="Afternoon" value="Afternoon"> Afternoon (12pm-6pm)</label>
+            <label for="Evening"><input type="checkbox" id="Evening" name="Evening" value="Evening"> Evening (6pm-9pm)</label>
 
             <h2>Reason for Contacting</h2>
-            <!-- Dropdown for selecting the reason -->
+            <label for="options">Select Reason</label>
             <select id="options" name="options" required>
                 <option value="" disabled selected>Please Select</option>
                 <option value="option1">Job Opportunity</option>
@@ -56,12 +55,11 @@
             </select>
 
             <h2>Send a Message</h2>
-            <!-- Textarea for custom message -->
-            <textarea placeholder="Enter Your Message Here" id="Message" required></textarea>
-            
-            <!-- Form buttons for submission and resetting -->
-            <button type="button" id="Submit" onclick="storeData()">Submit</button>
-            <button type="button" id="clear-reset" onclick="resetContact()">Clear/Reset</button>
+            <label for="Message">Message</label>
+            <textarea placeholder="Enter Your Message Here" id="Message" required aria-label="Enter your message"></textarea>
+
+            <button type="button" id="Submit">Submit</button>
+            <button type="reset" id="clear-reset">Clear/Reset</button>
         </form>
     </div>
 

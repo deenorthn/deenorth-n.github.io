@@ -398,3 +398,21 @@ footer a:hover {
     text-decoration: underline;
     color: #d94f4f;
 }
+
+/* Improve contrast for footer text */
+footer p {
+    color: #ffffff; /* Change to white for better readability */
+    background-color: #2a3a5e; /* Dark blue background */
+    padding: 10px;
+}
+
+/* Ensure links are visually distinct beyond color */
+a:link, a:visited {
+    color: #1e7cb1;
+    text-decoration: underline; /* Add underline for better distinction */
+}
+
+a:hover {
+    color: #d94f4f;
+    text-decoration: underline;
+}
